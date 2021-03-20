@@ -1,0 +1,41 @@
+<html>
+<style>
+    *{margin: 0;padding: 0;}
+    #on{
+        position: relative;
+    }
+    #o {
+        position: absolute;
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+
+    #t {
+        position: absolute;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+    }
+
+    #s {
+        position: absolute;
+        background-color: gray;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+
+<body><div id="on">
+    <div id="o"></div>
+    <div id="t"></div>
+    <div id="s"></div>
+    </div>  
+</body>
+<script>
+     document.addEventListener('click',(e)=>{
+        console.log( e.clientX,e.clientY)
+      })
+</script>
+</html>
