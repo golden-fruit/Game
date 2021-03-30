@@ -503,7 +503,7 @@ export default {
     },
   },
   mounted() {
-    this.mychart = echarts.init(this.$refs.mapbox);
+    this.mychart = echarts.init(this.$refs.mapbox);// 地图
     this.mychart.setOption(option);
     this.drawTable(3600, 50);
     this.getMousePos();
